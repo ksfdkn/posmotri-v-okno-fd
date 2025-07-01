@@ -18,7 +18,8 @@ html {
   background-color: #1b1919;
   display: flex;
   place-items: center;
-  padding: 133px 30px;
+  padding-inline: 30px;
+  padding-block: 133px;
 }
 
 h1,
@@ -41,16 +42,18 @@ ol {
 }
 
 .content {
-  display: flex;
-  flex-direction: row;
+  /*display: flex;
+  flex-direction: row;*/
+  display: grid;
+  grid-template-columns: 711px 1fr;
   gap: 30px;
-  align-items: flex-end;
+  align-items: end;
   inline-size: 1140px;
 }
 
 .result__video-container {
-  width: 711px;
-  height: 386px;
+  inline-size: 711px;
+  block-size: 386px;
   margin-bottom: 16px;
 }
 
@@ -80,6 +83,7 @@ ol {
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
+  padding-block-end: 1px;
 }
 
 .search-form__label {
@@ -115,8 +119,8 @@ ol {
 }
 
 .search-form__pseudo-checkbox {
-  width: 19px;
-  height: 19px;
+  inline-size: 19px;
+  block-size: 19px;
   border: 1px solid #fff;
 }
 
@@ -137,8 +141,8 @@ ol {
 }
 
 .search-form__submit-button {
-  width: 194px;
-  height: 34px;
+  inline-size: 194px;
+  block-size: 34px;
   align-self: flex-end;
 }
 
@@ -146,7 +150,7 @@ ol {
   display: flex;
   flex-direction: column;
   gap: 26px;
-  flex-grow: 1;
+  /*flex-grow: 1;*/
 }
 
 .title {
@@ -163,8 +167,8 @@ ol {
 }
 
 .content__list-container {
-  height: 298px;
-  max-inline-size: 399px;
+  block-size: 298px;
+  inline-size: 399px;
   overflow-y: auto;
 }
 
@@ -216,7 +220,7 @@ ol {
 
 .content__video-card-thumbnail {
   display: block;
-  min-width: 194px;
+  width: 194px;
   height: 103px;
   object-fit: cover;
   object-position: center;
@@ -224,7 +228,9 @@ ol {
 }
 
 .more-button {
-  height: 34px;
+  block-size: 34px;
+  inline-size: 100%;
+  margin-block-start: 30px;
 }
 
 /* Кастомный скроллбар */
