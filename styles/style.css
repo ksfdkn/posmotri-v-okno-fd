@@ -10,7 +10,7 @@ html {
 
 .page {
   inline-size: 1200px;
-  block-size: 100%;
+  block-size: 800px;
   margin: auto;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
@@ -18,8 +18,6 @@ html {
   background-color: #1b1919;
   display: flex;
   place-items: center;
-  padding-inline: 30px;
-  padding-block: 133px;
 }
 
 h1,
@@ -45,10 +43,11 @@ ol {
   /*display: flex;
   flex-direction: row;*/
   display: grid;
-  grid-template-columns: 711px 1fr;
+  grid-template-columns: 711px 399px;
   gap: 30px;
   align-items: end;
   inline-size: 1140px;
+  margin-inline-start: 30px;
 }
 
 .result__video-container {
@@ -71,7 +70,7 @@ ol {
   align-items: flex-start;
   font-weight: 400;
   font-size: 18px;
-  line-height: 22px;
+  line-height: 18px;
 }
 
 .search-form__fieldset {
@@ -83,7 +82,7 @@ ol {
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
-  padding-block-end: 1px;
+  margin-block-end: 8px;
 }
 
 .search-form__label {
@@ -204,6 +203,7 @@ ol {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  margin-block-start: -5px;
 }
 
 .content__video-card-description {
