@@ -39,19 +39,6 @@ ol {
   list-style: none;
 }
 
-.button {
-  border: 1px solid #fff;
-  color: inherit;
-  font-family: "Fira Sans Condensed", "Arial", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  font-style: normal;
-  line-height: 22px;
-  text-align: center;
-  background: transparent;
-  cursor: pointer;
-}
-
 .content {
   display: grid;
   grid-template-columns: 711px 399px;
@@ -144,6 +131,19 @@ ol {
   background-color: #fff;
   inline-size: 100%;
   block-size: 100%;
+}
+
+.button {
+  border: 1px solid #fff;
+  color: inherit;
+  font-family: "Fira Sans Condensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 22px;
+  text-align: center;
+  background: transparent;
+  cursor: pointer;
 }
 
 .search-form__submit-button {
